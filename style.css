@@ -1,0 +1,145 @@
+html, body {
+      margin: 0%;
+      padding: 0%;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: #0f0f0f;
+}
+
+.image-slider {
+      z-index: 0;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+}
+
+.image-slide {
+      height: 100vh;
+      margin: 0 auto;
+}
+
+.slick-slide.slick-center {
+      transform: scale(1.2);
+      transition: transform .8s 1.4s cubic-bezier(.84, 0, .08, .99);
+}
+
+.slick-slide {
+      transition: transform .7s cubic-bezier(.84, 0, .08, .99);
+}
+
+.slider-control {
+      margin: 0%;
+      position: absolute;
+      z-index: 2;
+      bottom: 8%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      display: flex;
+}
+
+button {
+      color: #fff;
+      background: none;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, .3);
+      font-size: 16px;
+      border-radius: 50%;
+      margin: .4em;
+      display: inline-block;
+}
+
+button:focus {
+      outline: none;
+}
+
+.block-1 {
+      z-index: 1;
+      position: fixed;
+      height: 100vh;
+      width: 5%;
+      left: 0%;
+      background: #0f0f0f;
+}
+
+.block-2 {
+      z-index: 1;
+      position: fixed;
+      height: 100vh;
+      width: 25%;
+      left: 25%;
+      background: #0f0f0f;
+}
+
+.block-3 {
+      z-index: 1;
+      position: fixed;
+      height: 100vh;
+      width: 5%;
+      right: 0%;
+      background: #0f0f0f;
+}
+
+.overlay {
+      z-index: 1;
+      position: fixed;
+      height: 100vh;
+      width: 20%;
+      left: 5%;
+      background: rgba(0, 0, 0, .65);
+}
+
+.text-slider-wrapper {
+      z-index: 2;
+      position: absolute;
+      width: 100%;
+      top: 45%;
+}
+
+.text-slider {
+      margin: 0%;
+      padding: 0%;
+      height: 100vh;
+}
+
+.text-slide h1 {
+      color: #fff;
+      font-size: 64px;
+      font-family: "Cinzel";
+      font-weight: lighter;
+      text-transform: uppercase;
+      padding-left: 10%;
+}
+
+@media(max-width: 990px) {
+      .block-2, .overlay {
+            display: none;
+      }
+
+      .block-1 {
+            width: 50%;
+      }
+
+      .block-3 {
+            width: 12%;
+      }
+
+      .slide-slick {
+            display: none !important;
+      }
+
+      .text-slide h1 {
+            font-size: 30px !important;
+      }
+
+      .text-slider-wrapper {
+            position: absolute;
+            top: 60% !important;
+      }
+
+      .slider-control {
+            left: 22.5%;
+      }
+}
+
